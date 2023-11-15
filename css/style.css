@@ -191,8 +191,8 @@ textarea.form-control{
 
 .btn-primary{
 	background: transparent;
-	border:1px solid #fff;
-	color: #fff;
+	border:1px solid #000;
+	color: #000;
 }
 
 .btn-primary:hover,
