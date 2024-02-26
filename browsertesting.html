@@ -9,22 +9,18 @@
 
 <script>
   window.onload = function() {
-    if (typeof chrome !== "undefined" && chrome.runtime) {
-      chrome.runtime.getManifest(function(manifest) {
-        var extensionName = manifest.name;
-        //console.log("Extension is running on Chrome. Extension Name:", extensionName);
-        alert("Extension is running on Chrome. Extension Name:", extensionName);
-        // Display the extension name on the page
-        var extensionNameElement = document.createElement("p");
-        extensionNameElement.textContent = "Extension Name: " + extensionName;
-        document.body.appendChild(extensionNameElement);
-
-        // Your code for when the extension is running on Chrome
-      });
-    } else {
-      console.log("Extension is not running on Chrome");
-      // Your code for when the extension is not running on Chrome
+    // background.js or popup.js
+  chrome.runtime.sendMessage({ extensionDetected: true });
+  // content.js
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    if (request.extensionDetected) {
+      // Do something on the web page when the extension is detected
+      console.log("Extension detected on the page!");
     }
+  }
+);
+
   };
 </script>
 
