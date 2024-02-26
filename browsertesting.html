@@ -8,20 +8,7 @@
 <body>
 
 <script>
-  window.onload = function() {
-    // background.js or popup.js
-  chrome.runtime.sendMessage({ extensionDetected: true });
-  // content.js
-chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
-    if (request.extensionDetected) {
-      // Do something on the web page when the extension is detected
-      console.log("Extension detected on the page!");
-    }
-  }
-);
-
-  };
+  alert('test');
 </script>
 
 </body>
