@@ -12,8 +12,8 @@
     if (typeof chrome !== "undefined" && chrome.runtime) {
       chrome.runtime.getManifest(function(manifest) {
         var extensionName = manifest.name;
-        console.log("Extension is running on Chrome. Extension Name:", extensionName);
-
+        //console.log("Extension is running on Chrome. Extension Name:", extensionName);
+        alert("Extension is running on Chrome. Extension Name:", extensionName);
         // Display the extension name on the page
         var extensionNameElement = document.createElement("p");
         extensionNameElement.textContent = "Extension Name: " + extensionName;
