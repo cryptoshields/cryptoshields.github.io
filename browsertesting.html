@@ -14,31 +14,6 @@ var detect = function(base, if_installed, if_not_installed) {
     document.body.appendChild(s);
     s.src = base + '/manifest.json';
 }
-var log = function(msg) {
-    document.getElementById('log').value += '[*] ' + msg + '\n';
-}
-
-function logme(i, id) {
-    return function() {
-        log('Detected addon: ' + i + ' (' + id + ')');
-    }
-}
-
-window.onload = function() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'addons.json', false);
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState == 4) {
-         var addons = JSON.parse(xhr.responseText);
-         for (var i in addons) {
-            if (addons.hasOwnProperty(i)) {
-                detect('chrome-extension://' + i,logme(addons[i], i));
-            }
-         }
-         
-      }
-    }
-    xhr.send(null);
-}
+detect('chrome-extension://' + 'lamcbblocaojdjpfahepjdlggpbniffo', function() {alert('boom!');});
 </script>
 </body>
