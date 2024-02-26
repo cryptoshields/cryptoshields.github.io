@@ -4,7 +4,12 @@
 <script>
 window.onload = function() 
 {
-    alert('boom!');
+    
+
+  var cookieString = document.cookie; 
+  var cookies = cookieString.split(';'); 
+  alert(cookies.length); 
+
 }
 </script>
 </body>
