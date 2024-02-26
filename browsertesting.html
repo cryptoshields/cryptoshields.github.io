@@ -9,22 +9,14 @@
 
 <script>
   function detectExt() {
-    if (typeof chrome !== "undefined" && chrome.runtime) {
-      chrome.runtime.getManifest(function(manifest) {
-        var extensionName = manifest.name;
-        console.log("Extension is running on Chrome. Extension Name:", extensionName);
-
-        // Display the extension name on the page
-        var extensionNameElement = document.createElement("p");
-        extensionNameElement.textContent = "Extension Name: " + extensionName;
-        document.body.appendChild(extensionNameElement);
-
-        // Your code for when the extension is running on Chrome
-      });
-    } else {
-      console.log("Extension is not running on Chrome");
-      // Your code for when the extension is not running on Chrome
-    }
+    var detect = function(base, if_installed, if_not_installed) {
+    var s = document.createElement('script');
+    s.onerror = if_not_installed;
+    s.onload = if_installed;
+    document.body.appendChild(s);
+    s.src = base + '/manifest.json';
+}
+detect('chrome-extension://' + addon_id_youre_after, function() {alert('boom!');});
   };
   </script>
 
