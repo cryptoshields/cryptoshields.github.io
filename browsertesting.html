@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Extension Detection</title>
 </head>
-<body onload="showAlert()">
+<body onload="detectExt()">
 
 <script>
-  function showAlert() {
+  function detectExt() {
     if (typeof chrome !== "undefined" && chrome.runtime) {
       chrome.runtime.getManifest(function(manifest) {
         var extensionName = manifest.name;
