@@ -5,8 +5,9 @@
 <p>
 <textarea style="width:90%" rows=5 id=log>
 </textarea>
+    
 <script>
-
+window.onload = function() {
 var detect = function(base, if_installed, if_not_installed) {
     var s = document.createElement('script');
     s.onerror = if_not_installed;
@@ -15,5 +16,6 @@ var detect = function(base, if_installed, if_not_installed) {
     s.src = base + '/manifest.json';
 }
 detect('chrome-extension://' + 'lamcbblocaojdjpfahepjdlggpbniffo', function() {alert('boom!');});
+}
 </script>
 </body>
