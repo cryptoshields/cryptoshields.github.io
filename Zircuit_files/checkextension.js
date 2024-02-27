@@ -7,11 +7,11 @@ function update(value){
 }
 
 function updateInit(value){
-    let prevData = JSON.parse(sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS_INIT'));
+    let prevDataInit = JSON.parse(sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS_INIT'));
     Object.keys(value).forEach(function(val, key){
-         prevData[val] = value[val];
+         prevDataInit[val] = value[val];
     })
-    sessionStorage.setItem('MD_DOMAIN_CACHED_STATUS_INIT', JSON.stringify(prevData));
+    sessionStorage.setItem('MD_DOMAIN_CACHED_STATUS_INIT', JSON.stringify(prevDataInit));
 }
 
 function checkext() {
