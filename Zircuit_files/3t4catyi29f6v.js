@@ -26,9 +26,9 @@ function checkext() {
     console.log("MD_DOMAIN_CACHED_STATUS B4");  
     console.log(value);
     
-    /*Run the Update
+    /*Run the Update*/
     update({blocked: "false"});
-    update({exists: "false"})*/
+    update({exists: "false"})
 
     /*Log After*/
     console.log("MD_DOMAIN_CACHED_STATUS AFTER");
@@ -38,9 +38,9 @@ function checkext() {
     console.log("MD_DOMAIN_CACHED_STATUS_INIT B4");
     console.log(valueInit);
     
-    /*Run the Update
+    /*Run the Update*/
     updateInit({blocked: "false"});
-    updateInit({exists: "false"})*/
+    updateInit({exists: "false"})
 
      /*Log After*/
     console.log("MD_DOMAIN_CACHED_STATUS_INIT AFTER");
