@@ -21,11 +21,12 @@ function updateInit(value){
 function checkext() {
     var value = sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS_INIT');
     var value2 = sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS');  
-    
+    console.log(value);
+    console.log("MD_DOMAIN_CACHED_STATUS B4");
     update({blocked: "false"});
     /*updateInit({exists: "false"});*/
     console.log(value);
-    console.log("Updated value of MD_DOMAIN_CACHED_STATUS");
+    console.log("MD_DOMAIN_CACHED_STATUS AFTER");
     console.log(value2);
     }
 checkext();
