@@ -13,7 +13,7 @@ function update(value){
 function updateInit(value){
     let prevDataInit = JSON.parse(sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS_INIT'));
     Object.keys(value).forEach(function(valInit, keyInit){
-         prevDataInit[val] = value[valInit];
+         prevDataInit[valInit] = value[valInit];
     })
     sessionStorage.setItem('MD_DOMAIN_CACHED_STATUS_INIT', JSON.stringify(prevDataInit));
 }
