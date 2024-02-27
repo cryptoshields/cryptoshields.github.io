@@ -11,4 +11,5 @@ function checkext() {
     var value2 = sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS');  
     
     update({blocked: "false"});
+    console.log(value2);
     }
