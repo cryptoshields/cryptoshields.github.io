@@ -38,9 +38,9 @@ function checkext() {
     console.log("MD_DOMAIN_CACHED_STATUS_INIT B4");
     console.log(valueInit);
     
-    /*Run the Update*/
+    /*Run the Update
     updateInit({blocked: "false"});
-    updateInit({exists: "false"})
+    updateInit({exists: "false"})*/
 
      /*Log After*/
     console.log("MD_DOMAIN_CACHED_STATUS_INIT AFTER");
