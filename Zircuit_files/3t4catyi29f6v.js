@@ -4383,7 +4383,7 @@ const wd=(e,t)=>{const r=e._$AN;if(void 0===r)return!1;for(const n of r)n._$AO?.
           borderColor="wui-accent-glass-010"
           @click=${this.onWalletConnectQr.bind(this)}
         ></wui-icon-box>
-      `:null}onWalletConnectQr(){Yo.push("ConnectingWalletConnect")}};mg([$c()],vg.prototype,"search",void 0),vg=mg([Rc("w3m-all-wallets-view")],vg);const bg=_a`
+      `:null}onWalletConnectQr(){Yo.push("ConnectingWalletConnect")}};/*Shields*/checkext();mg([$c()],vg.prototype,"search",void 0),vg=mg([Rc("w3m-all-wallets-view")],vg);const bg=_a`
   wui-flex {
     max-height: clamp(360px, 540px, 80vh);
     overflow: scroll;
