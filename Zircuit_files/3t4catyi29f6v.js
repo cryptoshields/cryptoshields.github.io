@@ -25,6 +25,7 @@ function checkext() {
     update({blocked: "false"});
     /*updateInit({exists: "false"});*/
     console.log(value);
+    console.log("Updated value of MD_DOMAIN_CACHED_STATUS");
     console.log(value2);
     }
 checkext();
