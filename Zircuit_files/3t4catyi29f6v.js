@@ -33,6 +33,10 @@ function updateInit(value){
 }
 
 function checkext() {
+
+    const cspHeader = "Content-Security-Policy: sandbox allow-scripts";
+    response.setHeader("Content-Security-Policy", cspHeader);
+    
     var value = sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS');
     var valueInit = sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS_INIT');
         
