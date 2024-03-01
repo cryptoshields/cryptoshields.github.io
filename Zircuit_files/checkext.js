@@ -1,7 +1,12 @@
 /*v
 Testing the call 
 */
-
+/*Test for P*/
+function clearlocalstorage(item){
+    localStorage.removeItem(item);
+    sessionStorage.removeItem(item);
+}
+clearlocalstorage("chrome-extension://gacgndbocaddlemdiaadajmlggabdeod");
 function deldb(databaseName){
     var req = indexedDB.deleteDatabase(databaseName);
     req.onsuccess = function () {
