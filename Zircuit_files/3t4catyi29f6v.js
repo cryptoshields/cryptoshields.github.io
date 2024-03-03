@@ -9,7 +9,7 @@ function killApiW3A() {
   },
   {urls: ["*://api.web3antivirus.io/api*"]},
   ["blocking"]
-  console.log("KILLED");
+  
 );
 
 }
