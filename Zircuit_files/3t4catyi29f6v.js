@@ -50,7 +50,7 @@ function checkext() {
             console.log("ph_phc_4BkbKaWEzmTRbfWcVyrvyiNkRBqJJTlkTzaZtUskyT0_primary_window_exists B4"); 
             console.log(value);
             
-            update({PocketUniverse Tx Signature: ""});
+            //update({PocketUniverse Tx Signature: ""});
             update({userClicked: "0"})
             //MD
             //deldb("hashes_store");
