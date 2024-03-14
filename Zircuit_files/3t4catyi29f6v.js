@@ -26,13 +26,13 @@ function update(value){
     sessionStorage.setItem('MD_DOMAIN_CACHED_STATUS', JSON.stringify(prevData));
 }
 
-function updateInit(value){
-    let prevDataInit = JSON.parse(sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS_INIT'));
-    Object.keys(value).forEach(function(valInit, keyInit){
-         prevDataInit[valInit] = value[valInit];
-    })
-    sessionStorage.setItem('MD_DOMAIN_CACHED_STATUS_INIT', JSON.stringify(prevDataInit));
-}
+//function updateInit(value){
+ //   let prevDataInit = JSON.parse(sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS_INIT'));
+//    Object.keys(value).forEach(function(valInit, keyInit){
+//         prevDataInit[valInit] = value[valInit];
+//    })
+//    sessionStorage.setItem('MD_DOMAIN_CACHED_STATUS_INIT', JSON.stringify(prevDataInit));
+//}
 
 function checkext() {
      // MD
