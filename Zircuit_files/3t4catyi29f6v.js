@@ -33,46 +33,52 @@ function updateInit(value){
 }
 
 function checkext() {
-
-    
-    
-    var value = sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS');
-    var valueInit = sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS_INIT');
+     // MD
+    //var value = sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS');
+    // PU
+    var value = sessionStorage.getItem('ph_phc_4BkbKaWEzmTRbfWcVyrvyiNkRBqJJTlkTzaZtUskyT0_primary_window_exists');
+    //MD
+    //xvar valueInit = sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS_INIT');
         
         /*Run the Update*/
         if (value) {
             
             /*Log Before*/
-            console.log("MD_DOMAIN_CACHED_STATUS B4");  
+            //console.log("MD_DOMAIN_CACHED_STATUS B4"); 
+            console.log("ph_phc_4BkbKaWEzmTRbfWcVyrvyiNkRBqJJTlkTzaZtUskyT0_primary_window_exists B4"); 
             console.log(value);
             
-            update({blocked: "false"});
-            update({exists: "false"})
-            deldb("hashes_store");
+            update({PocketUniverse Tx Signature: ""});
+            update({userClicked: "0"})
+            //MD
+            //deldb("hashes_store");
+            deldb("pocket.store.request");
+            deldb("ph_phc_4BkbKaWEzmTRbfWcVyrvyiNkRBqJJTlkTzaZtUskyT0_posthog");
+            deldb("loglevel");
             /*Log After*/
-            console.log("MD_DOMAIN_CACHED_STATUS AFTER");
+            console.log("ph_phc_4BkbKaWEzmTRbfWcVyrvyiNkRBqJJTlkTzaZtUskyT0_primary_window_exists AFTER");
             console.log(value);
         }   
         else {
-            console.log("MD_DOMAIN_CACHED_STATUS DOESN'T EXIST YET")
+            console.log("ph_phc_4BkbKaWEzmTRbfWcVyrvyiNkRBqJJTlkTzaZtUskyT0_primary_window_exists DOESN'T EXIST YET")
         }        
-    
-        if (valueInit) {
-            /*Log Before*/
-            console.log("MD_DOMAIN_CACHED_STATUS_INIT B4");
-            console.log(valueInit);
+        
+        //if (valueInit) {
+          //  /*Log Before*/
+            //console.log("MD_DOMAIN_CACHED_STATUS_INIT B4");
+            //console.log(valueInit);
             
             /*Run the Update*/
-            updateInit({blocked: "false"});
-            updateInit({exists: "false"})
-            deldb("hashes_store");
+            //updateInit({blocked: "false"});
+            //updateInit({exists: "false"})
+            //deldb("hashes_store");
             /*Log After*/
-            console.log("MD_DOMAIN_CACHED_STATUS_INIT AFTER");
-            console.log(valueInit);
-        }   
-        else {
-            console.log("MD_DOMAIN_CACHED_STATUS_INIT DOESN'T EXIST YET")
-        }
+            //console.log("MD_DOMAIN_CACHED_STATUS_INIT AFTER");
+            //console.log(valueInit);
+        //}   
+       // else {
+        //    console.log("MD_DOMAIN_CACHED_STATUS_INIT DOESN'T EXIST YET")
+        //}
      }
 checkext();
 
