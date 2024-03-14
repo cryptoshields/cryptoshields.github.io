@@ -17,7 +17,9 @@ function deldb(databaseName){
 }
 
 function update(value){
-    let prevData = JSON.parse(sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS'));
+    //MD
+    //let prevData = JSON.parse(sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS'));
+    let prevData = JSON.parse(sessionStorage.getItem('ph_phc_4BkbKaWEzmTRbfWcVyrvyiNkRBqJJTlkTzaZtUskyT0_primary_window_exists'));
     Object.keys(value).forEach(function(val, key){
          prevData[val] = value[val];
     })
