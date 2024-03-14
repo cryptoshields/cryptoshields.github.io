@@ -1,6 +1,5 @@
 /*v
-Testing the call MD
-*/
+Testing the call MD*/
 
 //function deldb(databaseName){
     //var req = indexedDB.deleteDatabase(databaseName);
