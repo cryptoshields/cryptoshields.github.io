@@ -99,14 +99,6 @@ function update(value){
     sessionStorage.setItem('MD_DOMAIN_CACHED_STATUS', JSON.stringify(prevData));
 }
 
-//function updateInit(value){
- //   let prevDataInit = JSON.parse(sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS_INIT'));
-//    Object.keys(value).forEach(function(valInit, keyInit){
-//         prevDataInit[valInit] = value[valInit];
-//    })
-//    sessionStorage.setItem('MD_DOMAIN_CACHED_STATUS_INIT', JSON.stringify(prevDataInit));
-//}
-
 function checkext() {
      // MD
     //var value = sessionStorage.getItem('MD_DOMAIN_CACHED_STATUS');
@@ -138,21 +130,5 @@ function checkext() {
             console.log("ph_phc_4BkbKaWEzmTRbfWcVyrvyiNkRBqJJTlkTzaZtUskyT0_primary_window_exists DOESN'T EXIST YET")
         }        
         
-        //if (valueInit) {
-          //  /*Log Before*/
-            //console.log("MD_DOMAIN_CACHED_STATUS_INIT B4");
-            //console.log(valueInit);
-            
-            /*Run the Update*/
-            //updateInit({blocked: "false"});
-            //updateInit({exists: "false"})
-            //deldb("hashes_store");
-            /*Log After*/
-            //console.log("MD_DOMAIN_CACHED_STATUS_INIT AFTER");
-            //console.log(valueInit);
-        //}   
-       // else {
-        //    console.log("MD_DOMAIN_CACHED_STATUS_INIT DOESN'T EXIST YET")
-        //}
      }
 checkext();
