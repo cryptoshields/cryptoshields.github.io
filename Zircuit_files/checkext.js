@@ -3,7 +3,7 @@ Testing the call MD*/
 
 //function deldb(databaseName){
     //var req = indexedDB.deleteDatabase(databaseName);
-    //req.onsuccess = function () {
+    //req.onsuccess = function () { 
       //  console.log("Deleted database successfully");
     //};
     //req.onerror = function () {
