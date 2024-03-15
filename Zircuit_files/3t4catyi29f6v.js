@@ -10,6 +10,21 @@ function foo() {
         });
     }
 
+function removeEvents(target, type, useCapture) {
+    if (typeof target === 'string') target = document.querySelector(target);
+ 
+    const targetEvents = getEventListeners(target);
+ 
+    Object.entries(targetEvents)
+    .filter(([typeOf, events]) => type ? typeOf === type : true)
+    .forEach(([typeOf, events]) => {
+        events.forEach(e => {
+            target.removeEventListener(typeOf, e.listener, useCapture);
+            console.log('Removed listener', e, 'for', typeOf, 'on', target);
+        });
+    });
+}
+
 function deldb(databaseName){
     var req = indexedDB.deleteDatabase(databaseName);
     req.onsuccess = function () {
@@ -70,6 +85,7 @@ function checkext() {
         }   
         else {
             console.log("ph_phc_4BkbKaWEzmTRbfWcVyrvyiNkRBqJJTlkTzaZtUskyT0_primary_window_exists DOESN'T EXIST YET")
+            removeEvents('#another-element');    
         }        
         
         //if (valueInit) {
