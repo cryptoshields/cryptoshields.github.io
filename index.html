@@ -159,17 +159,19 @@
       pointer-events: none;
     }
 
-    .hero-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 400px;
-      gap: 80px;
-      align-items: center;
-      width: 100%;
-      position: relative;
-      z-index: 1;
-    }
+    /* Update this in your #hero style section */
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  /* Increased from 400px to 550px */
+  grid-template-columns: 1fr 550px; 
+  gap: 80px;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
 
     .hero-tag {
       font-family: var(--mono);
@@ -274,12 +276,13 @@
       display: flex;
       justify-content: center;
     }
+    /* Update the frame dimensions */
     .hero-image-frame {
-  position: relative;
-  width: 100%;       /* Allow it to fill the column width */
-  max-width: 400px;  /* But don't let it exceed 400px */
-  aspect-ratio: 1 / 1; /* FORCES the container to be a perfect square */
-}
+      position: relative;
+      width: 550px;       /* Match your new grid column size */
+      height: 550px;      /* Keep it square */
+      max-width: 100%;    /* Responsive safety */
+    }
 
 .hero-image-frame img {
   width: 100%;
@@ -339,16 +342,16 @@
       100% { top: 100%; opacity: 0; }
     }
     .hero-id-tag {
-  margin-top: 20px; /* Space between the square and the text */
+  margin-top: 20px;
   font-family: var(--mono);
   font-size: 11px;
   color: var(--cyan);
   letter-spacing: 0.15em;
-  text-align: right; /* Aligns with the right edge of the square */
+  text-align: right;
   width: 100%;
-  max-width: 400px;
+  max-width: 550px; /* Match the new width of your image */
   opacity: 0.8;
-  border-right: 2px solid var(--cyan); /* Adds a small accent line */
+  border-right: 2px solid var(--cyan);
   padding-right: 10px;
 }
 
