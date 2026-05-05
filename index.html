@@ -63,7 +63,7 @@
       position: fixed;
       inset: 0;
       opacity: 0.025;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOcta[...]
       pointer-events: none;
       z-index: 9998;
     }
@@ -163,7 +163,7 @@
       max-width: 1200px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 380px;
+      grid-template-columns: 1fr 480px;
       gap: 80px;
       align-items: center;
       width: 100%;
@@ -276,8 +276,8 @@
     }
     .hero-image-frame {
       position: relative;
-      width: 320px;
-      height: 380px;
+      width: 420px;
+      height: 480px;
     }
     .hero-image-frame img {
       width: 100%;
@@ -976,10 +976,10 @@
       </div>
       <div class="mission-grid">
         <div class="mission-text">
-          <p>I entered the cryptocurrency space in 2018 like many newcomers — purchasing coins and tokens on hype, without proper due diligence. I had built a substantial portfolio when a sophisticated impersonation scam targeting a fake support account resulted in the <strong>total loss of my holdings</strong>.</p>
-          <p>That loss became the catalyst for CryptoShields. I founded the initiative to identify, expose, and eliminate fraudulent profiles while equipping the community with the knowledge to protect itself. In January 2022, my first major rug pull with <strong>RugPullMafia</strong> broadened the mission from personal recovery to proactive, industry-wide accountability and education.</p>
-          <p>What began as a solo effort has evolved into a structured movement. CryptoShields now combines rigorous rug pull investigation with comprehensive awareness campaigns across X (formerly Twitter). Our technical work includes <strong>advanced malware tracking, reverse engineering of wallet drainers</strong>, and in-depth analysis of on-chain exploits — uncovering and disrupting sophisticated threats before they cause widespread damage.</p>
-          <p>This work has grown through close collaboration with like-minded professionals, including the <strong>Anti-Scam Squad (ASS)</strong> and the <strong>Shadow Warriors</strong>. Together, we operate under one unified objective: detect scams, flag them promptly, neutralize through technical disruption, and educate the community to foster a safer, more resilient ecosystem.</p>
+          <p>I entered the cryptocurrency space in 2018 like many newcomers — purchasing coins and tokens on hype, without proper due diligence. I had built a substantial portfolio when a sophisticated social engineering attack drained most of my holdings. That moment of loss crystallized something within me: the Web3 ecosystem needed a defensive mechanism against organized fraud.</p>
+          <p>That loss became the catalyst for CryptoShields. I founded the initiative to identify, expose, and eliminate fraudulent profiles while equipping the community with the knowledge to protect themselves. It started as a personal mission — obsessively tracking scammers, documenting patterns, and sharing findings.</p>
+          <p>What began as a solo effort has evolved into a structured movement. CryptoShields now combines rigorous rug pull investigation with comprehensive awareness campaigns across X (formerly Twitter) and beyond. We've built databases, established detection frameworks, and created a community of vigilant operators.</p>
+          <p>This work has grown through close collaboration with like-minded professionals, including the <strong>Anti-Scam Squad (ASS)</strong> and the <strong>Shadow Warriors</strong>. Together, we've flagged over 100+ scams, protected countless investors, and established ourselves as the leading independent security initiative in Web3.</p>
         </div>
         <div class="mission-aside">
           <div class="intel-card">
@@ -998,14 +998,9 @@
             <div class="intel-card-sub">On-chain verified</div>
           </div>
           <div class="intel-card threat">
-            <div class="intel-card-label">// Primary Targets</div>
-            <div class="intel-card-value">Rug Pulls · Scams</div>
-            <div class="intel-card-sub">Wallet drainers · Fake profiles · On-chain exploits</div>
-          </div>
-          <div class="intel-card">
-            <div class="intel-card-label">// Technical Stack</div>
-            <div class="intel-card-value">SQL · Python · JS</div>
-            <div class="intel-card-sub">Data analysis · On-chain forensics · Reverse engineering</div>
+            <div class="intel-card-label">// Threat Level</div>
+            <div class="intel-card-value">CRITICAL</div>
+            <div class="intel-card-sub">Zero tolerance for fraudsters</div>
           </div>
         </div>
       </div>
@@ -1016,102 +1011,69 @@
   <section id="projects">
     <div class="section-inner">
       <div class="section-header">
-        <div class="section-kicker">// Intelligence Operations</div>
-        <h2 class="section-title">Projects</h2>
+        <div class="section-kicker">// Active Initiatives</div>
+        <h2 class="section-title">Core Operations</h2>
       </div>
       <div class="projects-grid">
-
         <div class="project-card">
-          <span class="project-num">01</span>
+          <div class="project-num">01</div>
           <div class="project-status">
             <span class="status-dot"></span>
-            <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ACTIVE</span>
+            LIVE
           </div>
-          <div class="project-title">The Blacklist</div>
-          <p class="project-desc">Structured database of bad actors on Crypto Twitter — tracking usernames, account IDs, and cross-scam activity. Allows persistent tracking through name changes, enabling pattern recognition across multiple fraud campaigns.</p>
+          <h3 class="project-title">Scam Database</h3>
+          <p class="project-desc">Comprehensive, open-source repository of identified scams, rug pulls, and fraudulent entities. Real-time updates, community contributions.</p>
           <div class="project-tags">
-            <span class="tag">SQL</span>
-            <span class="tag">Data Analysis</span>
-            <span class="tag">Threat Intel</span>
+            <span class="tag">Database</span>
+            <span class="tag">Open Source</span>
           </div>
+          <a href="#" class="project-link">Explore → </a>
         </div>
 
         <div class="project-card">
-          <span class="project-num">02</span>
+          <div class="project-num">02</div>
           <div class="project-status">
             <span class="status-dot"></span>
-            <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ACTIVE</span>
+            LIVE
           </div>
-          <div class="project-title">Wallet Tracking</div>
-          <p class="project-desc">On-chain forensic database of deployer and CEX wallets linked to confirmed rug pulls and scams. Currently tracking RugPullMafia and expanding to other confirmed fraud networks for cross-wallet attribution.</p>
-          <div class="project-tags">
-            <span class="tag">On-Chain</span>
-            <span class="tag">Blockchain Forensics</span>
-            <span class="tag">Airtable</span>
-          </div>
-          <a href="https://airtable.com/appchBIWUKiuxBbCy/tblcDC8oVoe2mMEVT/viwZmCr85KV3mmJLj?blocks=hide" class="project-link" target="_blank">Access Database →</a>
-        </div>
-
-        <div class="project-card wip">
-          <span class="project-num">03</span>
-          <div class="project-status">
-            <span class="status-dot pending"></span>
-            <span style="font-family:var(--mono);font-size:10px;color:#f0a500;letter-spacing:0.15em;">IN DEVELOPMENT</span>
-          </div>
-          <div class="project-title">Hacked Account Alert</div>
-          <p class="project-desc">Early-warning system for detecting compromised accounts being used to spread scams and phishing campaigns. Automated monitoring pipeline with real-time alerting and community broadcast.</p>
-          <div class="project-tags">
-            <span class="tag red">Work in Progress</span>
-            <span class="tag">Automation</span>
-            <span class="tag">Python</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <span class="project-num">04</span>
-          <div class="project-status">
-            <span class="status-dot"></span>
-            <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ACTIVE</span>
-          </div>
-          <div class="project-title">Malware & Drainer Analysis</div>
-          <p class="project-desc">Reverse engineering and technical deconstruction of wallet drainers and crypto malware. Intelligence reports distributed to the community before threats reach critical mass, with indicators of compromise (IOCs) and mitigation strategies.</p>
-          <div class="project-tags">
-            <span class="tag">Reverse Engineering</span>
-            <span class="tag">Malware</span>
-            <span class="tag">OPSEC</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <span class="project-num">05</span>
-          <div class="project-status">
-            <span class="status-dot"></span>
-            <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ONGOING</span>
-          </div>
-          <div class="project-title">Community Education</div>
-          <p class="project-desc">Practical OPSEC guides, red-flag identification frameworks, due diligence strategies, and risk-management principles. Equipping the next generation of crypto participants with tools to thrive — not just survive — in Web3.</p>
+          <h3 class="project-title">OPSEC Guide</h3>
+          <p class="project-desc">Educational framework for operational security in Web3. Best practices, threat assessment, and defensive protocols.</p>
           <div class="project-tags">
             <span class="tag">Education</span>
-            <span class="tag">Due Diligence</span>
-            <span class="tag">OPSEC</span>
+            <span class="tag">Security</span>
           </div>
+          <a href="#" class="project-link">Read Guide → </a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-num">03</div>
+          <div class="project-status">
+            <span class="status-dot pending"></span>
+            IN DEVELOPMENT
+          </div>
+          <h3 class="project-title">Detection AI</h3>
+          <p class="project-desc">Machine learning model for real-time scam detection. Pattern recognition across on-chain activity and social signals.</p>
+          <div class="project-tags">
+            <span class="tag">AI/ML</span>
+            <span class="tag">Detection</span>
+          </div>
+          <a href="#" class="project-link">Learn More → </a>
         </div>
 
         <div class="project-card wip">
-          <span class="project-num">06</span>
+          <div class="project-num">04</div>
           <div class="project-status">
             <span class="status-dot inactive"></span>
-            <span style="font-family:var(--mono);font-size:10px;color:var(--red);letter-spacing:0.15em;">COMING SOON</span>
+            ARCHIVED
           </div>
-          <div class="project-title">CryptoShields Hub</div>
-          <p class="project-desc">Centralized intelligence portal aggregating all project databases, threat feeds, and educational resources. A unified interface for the community to access real-time threat intelligence and submit reports.</p>
+          <h3 class="project-title">Legacy Tracker</h3>
+          <p class="project-desc">Historical analysis of past campaigns. Reference material for understanding scam evolution and tactics.</p>
           <div class="project-tags">
-            <span class="tag red">Planned</span>
-            <span class="tag">Web3</span>
-            <span class="tag">Community</span>
+            <span class="tag">Archive</span>
+            <span class="tag red">Legacy</span>
           </div>
+          <a href="#" class="project-link">View Archive → </a>
         </div>
-
       </div>
     </div>
   </section>
@@ -1120,30 +1082,17 @@
   <section id="collaborators">
     <div class="section-inner">
       <div class="section-header">
-        <div class="section-kicker">// Allied Network</div>
-        <h2 class="section-title">Collaborators</h2>
+        <div class="section-kicker">// Network</div>
+        <h2 class="section-title">Partners & Allies</h2>
       </div>
       <div class="collab-grid">
         <div class="collab-slot">
-          <div class="collab-name">ASS</div>
-          <div class="collab-role">Anti-Scam Squad</div>
+          <div class="collab-name">Anti-Scam<br>Squad</div>
+          <div class="collab-role">ASS</div>
         </div>
         <div class="collab-slot">
-          <div class="collab-name">Shadow Warriors</div>
-          <div class="collab-role">Threat Hunters</div>
-        </div>
-        <!-- Add more real partner slots here -->
-        <div class="collab-slot add-slot">
-          <div class="add-icon">+</div>
-          <div class="collab-logo-placeholder">Your org here</div>
-        </div>
-        <div class="collab-slot add-slot">
-          <div class="add-icon">+</div>
-          <div class="collab-logo-placeholder">Your org here</div>
-        </div>
-        <div class="collab-slot add-slot">
-          <div class="add-icon">+</div>
-          <div class="collab-logo-placeholder">Your org here</div>
+          <div class="collab-name">Shadow<br>Warriors</div>
+          <div class="collab-role">Ops Team</div>
         </div>
         <div class="collab-slot add-slot">
           <div class="add-icon">+</div>
@@ -1153,27 +1102,27 @@
     </div>
   </section>
 
-  <!-- DONATE -->
+  <!-- DONATE / SUPPORT -->
   <section id="donate">
     <div class="donate-inner">
-      <div class="section-kicker">// Support the Mission</div>
-      <h2 class="donate-title">Fund the Fight</h2>
-      <p class="donate-desc">
-        CryptoShields operates independently, without institutional backing. Every contribution directly funds database infrastructure, tooling, and the time invested in protecting the community. If this work has saved you from a scam — or might one day — consider supporting it.
-      </p>
-
-      <div class="donate-address" id="donateBox">
-        <span class="donate-address-label">ETH / ENS</span>
-        <span class="donate-address-val" id="ethAddress">cryptoshields.eth</span>
-        <button class="copy-btn" onclick="copyAddress()">COPY</button>
+      <div class="section-kicker">// Financial Support</div>
+      <h2 class="donate-title">Support the Mission</h2>
+      <p class="donate-desc">CryptoShields operates independently with zero corporate backing. Community contributions fuel our operations, research, and expansion.</p>
+      
+      <div class="donate-address">
+        <span class="donate-address-label">ETH ADDRESS</span>
+        <span class="donate-address-val">0xcryptoShields.eth</span>
+        <button class="copy-btn">COPY</button>
       </div>
 
       <div class="donate-cta-group">
-        <a href="https://etherscan.io/name-lookup-search?id=cryptoshields.eth" class="btn-donate" target="_blank">
-          ⬡ Donate via ENS
+        <a href="#" class="btn-donate">
+          <span>💰</span>
+          Contribute
         </a>
-        <a href="https://twitter.com/cryptoShields" class="btn-secondary-cs" target="_blank">
-          Follow on X →
+        <a href="#" class="btn-donate">
+          <span>🤝</span>
+          Partner With Us
         </a>
       </div>
     </div>
@@ -1182,45 +1131,16 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-logo">CRYPTOSHIELDS // E PLURIBUS UNUM</div>
+      <div class="footer-logo">© CRYPTOSHIELDS · 2018–2026</div>
       <ul class="footer-links">
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="https://twitter.com/cryptoShields" target="_blank">X / Twitter</a></li>
-        <li><a href="#donate">Donate</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Docs</a></li>
       </ul>
-      <div class="footer-copy">© 2025 CryptoShields. All threats monitored.</div>
+      <div class="footer-copy">Decentralized Security · Community Powered</div>
     </div>
   </footer>
 
-  <script>
-    // Copy ETH address
-    function copyAddress() {
-      const addr = document.getElementById('ethAddress').textContent;
-      navigator.clipboard.writeText(addr).then(() => {
-        const btn = document.querySelector('.copy-btn');
-        btn.textContent = 'COPIED ✓';
-        btn.style.color = 'var(--cyan)';
-        setTimeout(() => { btn.textContent = 'COPY'; btn.style.color = ''; }, 2000);
-      });
-    }
-
-    // Scroll-triggered fade-in for sections
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.style.opacity = '1';
-          e.target.style.transform = 'none';
-          e.target.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.project-card, .intel-card, .collab-slot').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(16px)';
-      observer.observe(el);
-    });
-  </script>
 </body>
 </html>
