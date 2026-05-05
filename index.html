@@ -171,8 +171,6 @@
   width: 100%;
   position: relative;
   z-index: 1;
-  align-items: end; /* This will line up the bottom of your text with the bottom of the image */
-  padding-bottom: 20px;
 }
 
     .hero-tag {
@@ -273,11 +271,11 @@
     }
 
     /* HERO IMAGE */
-    .hero-image-wrap {
-      position: relative;
-      display: flex;
-      justify-content: center;
-    }
+   .hero-image-wrap {
+  display: flex;
+  flex-direction: column;
+  align-self: end; /* This pushes ONLY the image and ID tag to the bottom */
+}
     /* Update the frame dimensions */
     .hero-image-frame {
   position: relative;
