@@ -275,19 +275,20 @@
       justify-content: center;
     }
     .hero-image-frame {
-      position: relative;
-      width: 400px;
-      height: 400px;
-    }
-    .hero-image-frame img {
+  position: relative;
+  width: 100%;       /* Allow it to fill the column width */
+  max-width: 400px;  /* But don't let it exceed 400px */
+  aspect-ratio: 1 / 1; /* FORCES the container to be a perfect square */
+}
+
+.hero-image-frame img {
   width: 100%;
   height: 100%;
-  /* Ensures the image fills the 400x400 square without stretching */
-  object-fit: cover; 
-  /* 'center' is usually safer than 'top center' for portraits in squares */
-  object-position: center; 
+  object-fit: cover;
+  object-position: center; /* Changed from top center to center the face */
   display: block;
   filter: contrast(1.05) brightness(0.95);
+  /* Keep your existing clip-path */
   clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
 }
     /* Corner brackets */
