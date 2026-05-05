@@ -339,14 +339,18 @@
       100% { top: 100%; opacity: 0; }
     }
     .hero-id-tag {
-      margin-top: 16px;
-      font-family: var(--mono);
-      font-size: 10px;
-      color: var(--cyan);
-      letter-spacing: 0.15em;
-      text-align: center;
-      opacity: 0.7;
-    }
+  margin-top: 20px; /* Space between the square and the text */
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--cyan);
+  letter-spacing: 0.15em;
+  text-align: right; /* Aligns with the right edge of the square */
+  width: 100%;
+  max-width: 400px;
+  opacity: 0.8;
+  border-right: 2px solid var(--cyan); /* Adds a small accent line */
+  padding-right: 10px;
+}
 
     /* Stats bar */
     .hero-stats {
