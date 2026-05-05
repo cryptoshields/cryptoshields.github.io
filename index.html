@@ -278,11 +278,11 @@
     }
     /* Update the frame dimensions */
     .hero-image-frame {
-      position: relative;
-      width: 550px;       /* Match your new grid column size */
-      height: 550px;      /* Keep it square */
-      max-width: 100%;    /* Responsive safety */
-    }
+  position: relative;
+  width: 100%;       /* Allow it to fill the column width */
+  max-width: 550px;  /* But don't let it exceed 400px */
+  aspect-ratio: 1 / 1; /* FORCES the container to be a perfect square */
+}
 
 .hero-image-frame img {
   width: 100%;
