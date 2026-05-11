@@ -1024,107 +1024,150 @@
 
   <!-- PROJECTS -->
   <section id="projects">
-  <div class="section-inner">
-    <div class="section-header">
-      <div class="section-kicker">// Intelligence Operations</div>
-      <h2 class="section-title">Projects</h2>
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-kicker">// Intelligence Operations</div>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- ROW 1: Three small cards -->
+        <div class="project-card">
+          <span class="project-num">01</span>
+          <div class="project-status">
+            <span class="status-dot"></span>
+            <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ACTIVE</span>
+          </div>
+          <div class="project-title">The Blacklist</div>
+          <p class="project-desc">Structured database of bad actors on Crypto Twitter — tracking usernames, account IDs, and cross-scam activity. Allows persistent tracking through name changes, enabling pattern recognition across multiple fraud campaigns.</p>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Data Analysis</span>
+            <span class="tag">Threat Intel</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="project-num">02</span>
+          <div class="project-status">
+            <span class="status-dot"></span>
+            <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ACTIVE</span>
+          </div>
+          <div class="project-title">Wallet Tracking</div>
+          <p class="project-desc">On-chain forensic database of deployer and CEX wallets linked to confirmed rug pulls and scams. Currently tracking RugPullMafia and expanding to other confirmed fraud networks for cross-wallet attribution.</p>
+          <div class="project-tags">
+            <span class="tag">On-Chain</span>
+            <span class="tag">Blockchain Forensics</span>
+            <span class="tag">Airtable</span>
+          </div>
+          <a href="https://airtable.com/appchBIWUKiuxBbCy/tblcDC8oVoe2mMEVT/viwZmCr85KV3mmJLj?blocks=hide" class="project-link" target="_blank">Access Database →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="project-num">03</span>
+          <div class="project-status">
+            <span class="status-dot"></span>
+            <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ONGOING</span>
+          </div>
+          <div class="project-title">Community Education</div>
+          <p class="project-desc">Practical OPSEC guides, red-flag identification frameworks, due diligence strategies, and risk-management principles. Equipping the next generation of crypto participants with tools to thrive — not just survive — in Web3.</p>
+          <div class="project-tags">
+            <span class="tag">Education</span>
+            <span class="tag">Due Diligence</span>
+            <span class="tag">OPSEC</span>
+          </div>
+        </div>
+
+        <!-- ROW 2: Malware Simulation — full width featured -->
+        <div class="project-card project-card--featured">
+          <span class="project-num">04</span>
+          <div class="project-status">
+            <span class="status-dot"></span>
+            <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ACTIVE</span>
+            <span class="featured-badge">// LIVE DEMO</span>
+          </div>
+          <div class="project-title">Malware & Drainer Analysis</div>
+          <p class="project-desc">Reverse engineering and technical deconstruction of wallet drainers and crypto malware. Intelligence reports distributed before threats reach critical mass — with IOCs and mitigation strategies.</p>
+
+          <div class="sim-block">
+            <div class="sim-block-header">
+              <span class="sim-icon">💀</span>
+              <div>
+                <div class="sim-title">How Malware Steals Your Crypto</div>
+                <div class="sim-sub">Interactive browser-based attack simulation · No install required</div>
+              </div>
+            </div>
+            <p class="sim-desc">Split-screen demo — left panel shows what the victim sees, right panel mirrors the attacker's console in real time. Six synced attack phases from infection to full exfiltration.</p>
+            <div class="sim-phases">
+              <div class="sim-phase"><span class="phase-num">01</span><span class="phase-label">Infection</span></div>
+              <div class="sim-phase"><span class="phase-num">02</span><span class="phase-label">Keylogger</span></div>
+              <div class="sim-phase"><span class="phase-num">03</span><span class="phase-label">Vault Grab</span></div>
+              <div class="sim-phase"><span class="phase-num">04</span><span class="phase-label">Decryption</span></div>
+              <div class="sim-phase"><span class="phase-num">05</span><span class="phase-label">Seed Exposed</span></div>
+              <div class="sim-phase sim-phase--last"><span class="phase-num">06</span><span class="phase-label">Exfiltration</span></div>
+            </div>
+            <a href="https://cryptoshields.github.io/malware-simulation/" class="btn-sim" target="_blank" rel="noopener">
+              <span class="btn-sim-icon">▶</span> Launch Simulation
+            </a>
+          </div>
+
+          <div class="project-tags" style="margin-top:20px;">
+            <span class="tag">Reverse Engineering</span>
+            <span class="tag">Malware</span>
+            <span class="tag">OPSEC</span>
+            <span class="tag">Education</span>
+          </div>
+        </div>
+
+        <!-- ROW 3: Web3 War Game — full width featured -->
+        <div class="project-card project-card--featured project-card--wargame">
+          <span class="project-num">05</span>
+          <div class="project-status">
+            <span class="status-dot"></span>
+            <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ACTIVE</span>
+            <span class="featured-badge featured-badge--orange">// LIVE · SEPOLIA</span>
+          </div>
+          <div class="project-title">Web3 War Game</div>
+          <p class="project-desc">Live on-chain attack simulations on the Sepolia testnet. Players connect a burner wallet and experience real approval exploits, signature attacks, and delegate-call traps — the exact mechanics scammers use in the wild.</p>
+
+          <div class="sim-block sim-block--wargame">
+            <div class="sim-block-header">
+              <span class="sim-icon">🎮</span>
+              <div>
+                <div class="sim-title">Approve & Pray</div>
+                <div class="sim-sub">A game of scams, signatures, and survival · Requires MetaMask + Sepolia ETH</div>
+              </div>
+            </div>
+            <p class="sim-desc">Five escalating levels, each demonstrating a real attack vector. Mint fake tokens, get exploited, understand exactly how it happened. The most dangerous signature you'll ever safely sign.</p>
+            <div class="sim-phases">
+              <div class="sim-phase wg-phase"><span class="phase-num">LVL 1</span><span class="phase-label">Approve Trap</span></div>
+              <div class="sim-phase wg-phase"><span class="phase-num">LVL 2</span><span class="phase-label">setApprovalForAll</span></div>
+              <div class="sim-phase wg-phase"><span class="phase-num">LVL 3</span><span class="phase-label">Permit2</span></div>
+              <div class="sim-phase wg-phase"><span class="phase-num">LVL 4</span><span class="phase-label">delegatecall</span></div>
+              <div class="sim-phase wg-phase sim-phase--mystery"><span class="phase-num">LVL 5</span><span class="phase-label">???</span></div>
+            </div>
+            <div class="wg-btns">
+              <a href="https://cryptoshields.github.io/web3-wargame/index.html" class="btn-sim btn-sim--orange" target="_blank" rel="noopener">
+                <span class="btn-sim-icon">▶</span> Start War Game
+              </a>
+              <a href="https://cryptoshields.github.io/web3-wargame/learn.html" class="btn-sim-secondary" target="_blank" rel="noopener">
+                🧠 Learn Before You Sign →
+              </a>
+            </div>
+          </div>
+
+          <div class="project-tags" style="margin-top:20px;">
+            <span class="tag">On-Chain</span>
+            <span class="tag">Solidity</span>
+            <span class="tag">MetaMask</span>
+            <span class="tag">CTF</span>
+            <span class="tag">Education</span>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="projects-grid">
-
-      <div class="project-card">
-        <span class="project-num">01</span>
-        <div class="project-status">
-          <span class="status-dot"></span>
-          <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ACTIVE</span>
-        </div>
-        <div class="project-title">The Blacklist</div>
-        <p class="project-desc">Structured database of bad actors on Crypto Twitter — tracking usernames, account IDs, and cross-scam activity. Allows persistent tracking through name changes, enabling pattern recognition across multiple fraud campaigns.</p>
-        <div class="project-tags">
-          <span class="tag">SQL</span>
-          <span class="tag">Data Analysis</span>
-          <span class="tag">Threat Intel</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <span class="project-num">02</span>
-        <div class="project-status">
-          <span class="status-dot"></span>
-          <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">OPERATIONAL</span>
-        </div>
-        <div class="project-title">X-Ray Vision</div>
-        <p class="project-desc">Proprietary tool built to unmask bad actors by resolving unique account IDs from usernames. Once identified, attackers are permanently added to the database, ensuring they remain tracked even after handles are changed.</p>
-        <div class="project-tags">
-          <span class="tag">OSINT</span>
-          <span class="tag">Identity Resolution</span>
-          <span class="tag">Automation</span>
-        </div>
-      </div>
-
-      <div class="project-card wip">
-        <span class="project-num">03</span>
-        <div class="project-status">
-          <span class="status-dot pending"></span>
-          <span style="font-family:var(--mono);font-size:10px;color:#f0a500;letter-spacing:0.15em;">IN DEVELOPMENT</span>
-        </div>
-        <div class="project-title">Hacked Account Alert</div>
-        <p class="project-desc">Early-warning system for detecting compromised accounts being used to spread scams and phishing campaigns. Automated monitoring pipeline with real-time alerting and community broadcast.</p>
-        <div class="project-tags">
-          <span class="tag red">Work in Progress</span>
-          <span class="tag">Automation</span>
-          <span class="tag">Python</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <span class="project-num">04</span>
-        <div class="project-status">
-          <span class="status-dot"></span>
-          <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ACTIVE</span>
-        </div>
-        <div class="project-title">Malware & Drainer Analysis</div>
-        <p class="project-desc">Reverse engineering and technical deconstruction of wallet drainers and crypto malware. Intelligence reports distributed to the community before threats reach critical mass, with indicators of compromise (IOCs) and mitigation strategies.</p>
-        <div class="project-tags">
-          <span class="tag">Reverse Engineering</span>
-          <span class="tag">Malware</span>
-          <span class="tag">OPSEC</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-  <span class="project-num">05</span>
-  <div class="project-status">
-    <span class="status-dot"></span>
-    <span style="font-family:var(--mono);font-size:10px;color:var(--cyan);letter-spacing:0.15em;">ONGOING</span>
-  </div>
-  <div class="project-title">Community Education</div>
-  <p class="project-desc">Practical OPSEC training through our <strong>Web3 Wargame simulation</strong>. By experiencing simulated threats in a controlled environment, participants learn to identify red flags and master risk-management without risking real assets.</p>
-  <div class="project-tags">
-    <span class="tag">Simulation</span>
-    <span class="tag">Gamified Learning</span>
-    <span class="tag">OPSEC</span>
-  </div>
-  <a href="https://cryptoshields.github.io/web3-wargame/index.html" class="project-link" target="_blank">Launch Simulation →</a>
-</div>
-
-      <div class="project-card wip">
-        <span class="project-num">06</span>
-        <div class="project-status">
-          <span class="status-dot inactive"></span>
-          <span style="font-family:var(--mono);font-size:10px;color:var(--red);letter-spacing:0.15em;">COMING SOON</span>
-        </div>
-        <div class="project-title">CryptoShields Hub</div>
-        <p class="project-desc">Centralized intelligence portal aggregating all project databases, threat feeds, and educational resources. A unified interface for the community to access real-time threat intelligence and submit reports.</p>
-        <div class="project-tags">
-          <span class="tag red">Planned</span>
-          <span class="tag">Web3</span>
-          <span class="tag">Community</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- COLLABORATORS -->
   <section id="collaborators">
