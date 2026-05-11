@@ -887,6 +887,155 @@
       to { opacity: 1; transform: none; }
     }
 
+    /* ─── FEATURED CARD + SIM BLOCK ─── */
+    .project-card--featured {
+      border-color: rgba(0, 240, 212, 0.25);
+      background: linear-gradient(135deg, #0f1318 0%, #0c1614 100%);
+      grid-column: 1 / -1;
+    }
+    .project-card--featured::before { transform: scaleX(1); }
+    .featured-badge {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--bg);
+      background: var(--cyan);
+      padding: 2px 8px;
+      letter-spacing: 0.1em;
+      margin-left: 8px;
+    }
+    .featured-badge--orange {
+      background: #f0a500;
+    }
+    .sim-block {
+      margin-top: 24px;
+      background: rgba(0,0,0,0.4);
+      border: 1px solid var(--border);
+      padding: 24px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .sim-block::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+      opacity: 0.5;
+    }
+    .sim-block-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .sim-icon { font-size: 22px; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+    .sim-title {
+      font-family: var(--display);
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .sim-sub {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-dim);
+      letter-spacing: 0.1em;
+      margin-top: 3px;
+    }
+    .sim-desc {
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+    .sim-phases {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+    .sim-phase {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0,240,212,0.04);
+      border: 1px solid rgba(0,240,212,0.12);
+      padding: 5px 10px;
+      font-family: var(--mono);
+    }
+    .phase-num { font-size: 9px; color: var(--cyan); opacity: 0.7; letter-spacing: 0.1em; }
+    .phase-label { font-size: 10px; color: var(--text-dim); letter-spacing: 0.08em; text-transform: uppercase; }
+    .sim-phase--last { border-color: rgba(255,59,59,0.2); background: rgba(255,59,59,0.04); }
+    .sim-phase--last .phase-label { color: var(--red); opacity: 0.8; }
+    .sim-phase--last .phase-num { color: var(--red); }
+    .btn-sim {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--cyan);
+      padding: 12px 28px;
+      text-decoration: none;
+      clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+      font-weight: 700;
+      transition: all 0.2s;
+    }
+    .btn-sim:hover {
+      background: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 0 20px rgba(0,240,212,0.3);
+    }
+    .btn-sim-icon { font-size: 10px; }
+
+    /* ─── WAR GAME CARD ─── */
+    .project-card--wargame {
+      background: linear-gradient(135deg, #0f1318 0%, #100e08 100%);
+    }
+    .project-card--wargame::before { background: #f0a500; }
+    .sim-block--wargame {
+      border-color: rgba(240,165,0,0.2);
+    }
+    .sim-block--wargame::before {
+      background: linear-gradient(90deg, transparent, #f0a500, transparent);
+    }
+    .wg-phase {
+      background: rgba(240,165,0,0.04);
+      border-color: rgba(240,165,0,0.15);
+    }
+    .wg-phase .phase-num { color: #f0a500; }
+    .wg-phase .phase-label { color: var(--text-dim); }
+    .sim-phase--mystery .phase-label { color: #f0a500; opacity: 0.6; }
+    .btn-sim--orange {
+      background: #f0a500;
+      color: var(--bg);
+    }
+    .btn-sim--orange:hover {
+      background: #ffc940;
+      box-shadow: 0 0 20px rgba(240,165,0,0.35);
+    }
+    .wg-btns {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-sim-secondary {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: #f0a500;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+    .btn-sim-secondary:hover { opacity: 1; }
+
     /* Responsive */
     @media (max-width: 900px) {
       nav { padding: 0 24px; }
@@ -1088,7 +1237,6 @@
           </div>
           <div class="project-title">Malware & Drainer Analysis</div>
           <p class="project-desc">Reverse engineering and technical deconstruction of wallet drainers and crypto malware. Intelligence reports distributed before threats reach critical mass — with IOCs and mitigation strategies.</p>
-
           <div class="sim-block">
             <div class="sim-block-header">
               <span class="sim-icon">💀</span>
@@ -1110,7 +1258,6 @@
               <span class="btn-sim-icon">▶</span> Launch Simulation
             </a>
           </div>
-
           <div class="project-tags" style="margin-top:20px;">
             <span class="tag">Reverse Engineering</span>
             <span class="tag">Malware</span>
@@ -1129,7 +1276,6 @@
           </div>
           <div class="project-title">Web3 War Game</div>
           <p class="project-desc">Live on-chain attack simulations on the Sepolia testnet. Players connect a burner wallet and experience real approval exploits, signature attacks, and delegate-call traps — the exact mechanics scammers use in the wild.</p>
-
           <div class="sim-block sim-block--wargame">
             <div class="sim-block-header">
               <span class="sim-icon">🎮</span>
@@ -1155,7 +1301,6 @@
               </a>
             </div>
           </div>
-
           <div class="project-tags" style="margin-top:20px;">
             <span class="tag">On-Chain</span>
             <span class="tag">Solidity</span>
