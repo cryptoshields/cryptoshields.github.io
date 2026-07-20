@@ -622,6 +622,31 @@
     }
     .project-link:hover { gap: 10px; }
 
+    .btn-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      background: var(--cyan-glow2);
+      border: 1px solid var(--border);
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-top: 20px;
+      clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+      transition: all 0.2s;
+    }
+    .btn-card:hover {
+      background: var(--cyan-glow);
+      border-color: var(--cyan);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 0 14px rgba(0,240,212,0.2);
+    }
+
     /* ─── COLLABORATORS ─── */
     #collaborators {
       background: var(--surface);
@@ -1194,6 +1219,9 @@
             <span class="tag">Data Analysis</span>
             <span class="tag">Threat Intel</span>
           </div>
+          <a href="https://x-ray-vision.up.railway.app/blacklist" class="btn-card" target="_blank" rel="noopener">
+            <span>⬡</span> Access Blacklist
+          </a>
         </div>
 
         <div class="project-card">
@@ -1209,7 +1237,9 @@
             <span class="tag">Blockchain Forensics</span>
             <span class="tag">Airtable</span>
           </div>
-          <a href="https://airtable.com/appchBIWUKiuxBbCy/tblcDC8oVoe2mMEVT/viwZmCr85KV3mmJLj?blocks=hide" class="project-link" target="_blank">Access Database →</a>
+          <a href="https://airtable.com/appchBIWUKiuxBbCy/tblcDC8oVoe2mMEVT/viwZmCr85KV3mmJLj?blocks=hide" class="btn-card" target="_blank" rel="noopener">
+            <span>⬡</span> Access Database
+          </a>
         </div>
 
         <div class="project-card">
